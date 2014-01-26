@@ -3,10 +3,10 @@ super-basic-boilerplate
 
 a super basic html5 boilerplate with lots of options, including
 
--reset and responsive grid stylesheets
--toolbox stylesheet with code for opacity, fade, spin, desaturate, and clearfix classes
--local and hosted fonts, including font awesome icons
--minified jquery 1.10.1 and .toggleClass() example
+* reset and responsive grid stylesheets
+* toolbox stylesheet with code for opacity, fade, spin, desaturate, and clearfix classes
+* local and hosted fonts, including font awesome icons
+* minified jquery 1.10.1 and .toggleClass() example
 
 demo: http://alexandrahoefinger.com/boilerplate/index.html
 
