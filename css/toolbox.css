@@ -34,6 +34,7 @@
   opacity: 0.5;
 }
 
+/*lighten on hover*/
 .fade {
    opacity: 1;
    transition: opacity .25s ease-in-out;
@@ -45,6 +46,7 @@
   opacity: 0.5;
 }
 
+/*spin item*/
 .spin {
   -webkit-animation: spin 4s infinite linear;
   -moz-animation: spin 4s infinite linear;
@@ -71,3 +73,68 @@
   0% {transform: rotate(0deg);}
   100% {transform: rotate(359deg);}
 }
+
+
+/*pop up item (add .animate with js)*/
+.pop {
+  opacity:0;
+}
+
+.pop.animate {
+  -moz-animation-duration:.5s;
+  -moz-animation-name:scaleUp;
+  -webkit-animation-duration:.5s;
+  -webkit-animation-name:scaleUp;
+  animation-duration:.5s;
+  animation-name:scaleUp;
+  opacity:1;
+}
+
+@-webkit-keyframes scaleUp {
+  from{
+    -webkit-transform:scale(0.9);
+    opacity:0;
+  }
+  
+  to {
+    -webkit-transform:scale(1);
+    opacity:1;
+  } 
+}
+
+@-moz-keyframes scaleUp {
+  from {
+    -moz-transform:scale(0.9);
+    opacity:0;
+  }
+  
+  to {
+    -moz-transform:scale(1);
+    opacity:1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform:scale(0.9);
+    opacity:0;
+  }
+  
+  to {
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+/*js to pop up at certain scroll point:*/
+/*	var pop = $( '.pop' );*/
+/*    pop.waypoint( function( direction ){*/
+/*        var $this = $( this );*/
+/*        if( !$this.hasClass( 'animate' ) ){*/
+/*            $this.addClass( 'animate' );*/
+/*        }   */
+/*    },*/
+/*    {*/
+/*        offset: '50%'*/
+/*    });*/
+
