@@ -10,4 +10,4 @@ a super basic html5 boilerplate with lots of options, including
 
 demo: http://alexandrahoefinger.com/boilerplate/index.html
 
-to use, clone this repo (`git clone git@github.com:ahoefinger/super-basic-boilerplate.git myproject`), remove its git info (rm -rf .git), et voila!
+to use, clone this repo (`git clone git@github.com:ahoefinger/super-basic-boilerplate.git myproject`), remove its git info (`rm -rf .git`), et voila!
